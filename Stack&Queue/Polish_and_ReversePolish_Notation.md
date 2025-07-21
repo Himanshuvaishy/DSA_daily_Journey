@@ -145,3 +145,25 @@ function evalPolish(tokens) {
 
 ✅ Both approaches require understanding operator precedence and operand ordering.  
 ✅ Prefer `Math.trunc()` over `Math.floor()` to ensure truncation **toward zero**, especially with **negative numbers**.
+
+🧮 Time and Space Complexity
+RPN (Reverse Polish Notation)
+Time Complexity: O(n)
+Iterate through all n tokens once.
+
+Space Complexity: O(n)
+In the worst case, all tokens are operands and stored in the stack.
+
+Polish Notation (Prefix)
+Time Complexity: O(n)
+Same as RPN — single pass, just from right to left.
+
+Space Complexity: O(n)
+Stack stores operands and intermediate results.
+
+✅ Notes
+Use Math.trunc() to truncate division results toward zero (as required by most online judge problems).
+
+Use splice() if mimicking stack behavior with arrays.
+
+Avoid Math.floor() since it always rounds down, which is incorrect for negative results.
