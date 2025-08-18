@@ -1,4 +1,43 @@
-# 🔍 Find the Middle Node in a Singly Linked List
+ # 🔍 Find the Middle Node in a Singly Linked List
+# Brute Force Approach to Find Middle Node of Linked List (JavaScript)
+
+We use the brute force method by first traversing the list to calculate its length, 
+then traversing again up to `Math.floor(length/2)` to get the middle node.
+
+```javascript
+class ListNode {
+    constructor(val, next = null) {
+        this.val = val;
+        this.next = next;
+    }
+}
+
+function findMiddle(head) {
+    let length = 0;
+    let temp = head;
+
+    // Step 1: Find length of linked list
+    while (temp !== null) {
+        length++;
+        temp = temp.next;
+    }
+
+    // Step 2: Find middle index
+    let mid = Math.floor(length / 2);
+
+    // Step 3: Traverse again to reach mid
+    temp = head;
+    for (let i = 0; i < mid; i++) {
+        temp = temp.next;
+    }
+
+    return temp.val;  // Return value of middle node
+}
+
+// Example usage:
+let head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
+console.log(findMiddle(head)); // Output: 2
+```
 
 ## 🧠 Intuition Behind the Fast and Slow Pointer Approach
 
