@@ -147,7 +147,7 @@ All matched → Palindrome ✅
 - **Array Approach:** Easier to implement but uses O(n) space.  
 - **Two-Pointer Approach:** Optimized with O(1) space, commonly asked in interviews.  
 
-
+```js
 A) Odd length example: 1 → 2 → 3 → 2 → 1
 1) Find the middle (slow/fast)
 
