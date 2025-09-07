@@ -40,7 +40,7 @@ let str = "JavaScript is awesome";
 console.log(str.indexOf("a")); // 1
 
 // lastIndexOf → last occurrence
-console.log(str.lastIndexOf("a")); // 3
+console.log(str.lastIndexOf("a")); // 14
 
 // includes → true/false
 console.log(str.includes("awesome")); // true
