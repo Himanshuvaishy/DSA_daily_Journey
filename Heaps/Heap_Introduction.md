@@ -90,3 +90,4 @@ This ensures compact and efficient storage in an array.
 ## Practice Question
 **Which one is Complete Binary Tree or Not?**  
 (Think of examples and check if they satisfy the "complete" property.)
+.
