@@ -87,3 +87,37 @@ var findKthLargest = function(nums, k) {
 ✅ This is why in LeetCode's JavaScript code you often see
 `MinPriorityQueue` or `MaxPriorityQueue` instead of writing custom heap
 classes.
+
+```js 
+🔹 Approach 2: Using Sorting (Simple but slower)
+Idea:
+
+Sort the array in descending order.
+
+The element at index k-1 is the kth largest.
+
+Time Complexity:
+
+Sorting → O(n log n)
+
+Space Complexity → O(1) (in-place sort)
+
+Code (JavaScript):
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+var findKthLargest = function(nums, k) {
+    nums.sort((a, b) => b - a);
+    return nums[k - 1];
+};
+
+// Example
+console.log(findKthLargest([3,2,1,5,6,4], 2)); // Output: 5
+console.log(findKthLargest([3,2,3,1,2,4,5,5,6], 4)); // Output: 4
+
+🔹 Summary Comparison
+Approach	Time Complexity	Space Complexity	Best For
+Sorting	O(n log n)	O(1)	Small/medium input size
+Min Heap	O(n log k)	O(k)	Large input size, smaller k
