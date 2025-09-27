@@ -135,7 +135,7 @@ return result;
 
 -   Any selection of elements (order doesn't matter, any size allowed).\
 -   Example: `[1,2]` from `[1,2,3]`.\
--   Formula (number of subsets): `2^n`
+-   Formula (number of subsets): `2^n`.
 
 ------------------------------------------------------------------------
 
