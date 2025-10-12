@@ -5,7 +5,7 @@ Given a collection of numbers `nums` that might contain **duplicates**, return *
 
 ### Example
 ```js
-Input: nums = [1,1,2]
+Input: nums = [1,1,2].
 Output:
 [
   [1,1,2],
