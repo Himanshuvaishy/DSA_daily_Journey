@@ -17,7 +17,7 @@ A **Greedy Algorithm** builds the solution **step-by-step**, always choosing the
 
 ### 1️⃣ Optimization Problems (Minimize or Maximize Result)
 
-**Goal:** Find the **maximum or minimum** value like profit, number of tasks, distance, etc.
+**Goal:** Find the **maximum or minimum** value like profit, number of tasks, distance, etc
 
 **Examples:**
 - Minimum number of coins (to make a given amount)
