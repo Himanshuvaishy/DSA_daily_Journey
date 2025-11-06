@@ -90,6 +90,26 @@ var findContentChildren = function(g, s) {
 
     return i; // number of satisfied children
 };
+
+// using for loop 
+
+var findContentChildren = function(g, s) {
+    g.sort((a, b) => a - b);
+    s.sort((a, b) => a - b);
+
+    let i = 0; // index for child
+
+    for (let j = 0; j < s.length && i < g.length; j++) {
+        if (s[j] >= g[i]) {
+            i++; // cookie satisfies current child
+        }
+        // j automatically increments in the for loop
+    }
+
+    return i;
+};
+
+
 ```
 
 ---
