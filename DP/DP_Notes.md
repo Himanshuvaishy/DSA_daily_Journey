@@ -65,11 +65,13 @@ Fib(n) = Fib(n-1) + Fib(n-2)
 If both conditions are satisfied → DP is valid.
 
 📌 DP vs Greedy
-Greedy	DP
-Chooses best local option	Checks all possibilities
-Fast but may fail	Always correct for DP problems
-No memory	Uses memory
-Simple	Structured approach
+   Greedy	                          DP
+Chooses best local option	   Checks all possibilities
+Fast but may fail	            Always correct for DP problems
+No memory	                      Uses memory
+Simple	                          Structured approach
+
+
 🧠 Fibonacci – The Classic DP Example
 ❌ Naive Recursion
 Fib(n) = Fib(n-1) + Fib(n-2)
@@ -140,11 +142,11 @@ Space: O(n)
 
 (No recursion → no stack issues)
 
-📌 Top-Down vs Bottom-Up
-Feature	Top-Down (Memoization)	Bottom-Up (Tabulation)
-Uses	Recursion	Loops
-Storage	Cache (object/map)	DP array
-Risk	Stack overflow	No risk
+📌           Top-Down vs                   Bottom-Up
+Feature	    Top-Down (Memoization)   	Bottom-Up (Tabulation)
+Uses	   Recursion                   	Loops
+Storage	   Cache (object/map)	          DP array
+Risk	   Stack overflow	                No risk
 Good for	Problems defined recursively	Straight iterative transitions
 🎯 Summary of DP
 
