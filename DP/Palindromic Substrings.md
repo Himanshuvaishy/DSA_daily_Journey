@@ -21,6 +21,11 @@ A substring is a contiguous sequence of characters within the string.
 - 1 <= s.length <= 1000
 - s consists of lowercase English letters.
 
+## Why DP?
+🚀 Summary Intuition in One Sentence
+
+We use DP because larger palindromes depend entirely on knowing whether the smaller inner substring is a palindrome, and DP allows us to reuse that information efficiently instead of recomputing it. 
+
 ## Approach
 We use a 2D DP table `dp[i][j]`, where `dp[i][j] = true` if substring `s[i..j]` is a palindrome.
 
