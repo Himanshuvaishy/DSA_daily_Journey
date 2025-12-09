@@ -29,6 +29,17 @@ function sumArray(arr, i = 0) {
     if (i === arr.length) return 0;
     return arr[i] + sumArray(arr, i + 1);
 }
+
+### from n to 0 index
+
+let arr = [5, 2, 6, 1, 3];
+
+    function sum(n) {
+    if (n === 0) return arr[0];
+    return arr[n] + sum(n - 1);
+    }
+console.log(sum(arr.length - 1)); // 17
+    
 ```
 
 **Time:** O(n)  
