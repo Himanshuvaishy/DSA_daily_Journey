@@ -36,6 +36,15 @@ function factorial(n) {
     if (n === 0) return 1;   // base case
     return n * factorial(n - 1);
 }
+
+## from n to 1
+
+function factorial(n, index) {
+    if (n === index) return n;   // base case
+    return index * factorial(n, index + 1);
+}
+
+console.log(factorial(6, 1)); // Output: 720
 ```
 
 **Time:** O(n)  
