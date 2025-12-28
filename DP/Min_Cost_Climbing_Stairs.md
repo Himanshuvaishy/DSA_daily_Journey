@@ -51,19 +51,25 @@ function minCostClimbingStairs(cost) {
 ```js
 function minCostClimbingStairs(cost) {
   const n = cost.length;
-  const memo = new Array(n).fill(-1);
+  const memo = new Array(n + 1).fill(-1);
 
   function f(i) {
-    if (i >= n) return 0;
+    // base cases
+    if (i === 0 || i === 1) return 0;
+
     if (memo[i] !== -1) return memo[i];
 
-    const bestNext = Math.min(f(i + 1), f(i + 2));
-    memo[i] = cost[i] + bestNext;
+    memo[i] = Math.min(
+      f(i - 1) + cost[i - 1],
+      f(i - 2) + cost[i - 2]
+    );
+
     return memo[i];
   }
 
-  return Math.min(f(0), f(1));
+  return f(n);
 }
+
 
 ```
 
